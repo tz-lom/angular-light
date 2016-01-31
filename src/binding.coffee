@@ -626,7 +626,7 @@ alight.bootstrap = (input, data) ->
             option =
                 skip_attr: ['al-app', 'al:app']
 
-            ctrlName = element.getAttribute('al-app') or element.getAttribute 'al:app' or element.getAttribute 'data-al-app'
+            ctrlName = element.getAttribute('al-app') or element.getAttribute('al:app') or element.getAttribute('data-al-app')
             if ctrlName
                 option.attachDirective =
                     'al-ctrl': ctrlName
